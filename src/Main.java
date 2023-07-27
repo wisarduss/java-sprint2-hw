@@ -8,26 +8,27 @@ public class Main {
 
         while (true){
             printMenu();
-            String command = scanner.next();
-            if (command.equals("1")){
-                reportManager.readMonthlyReports();
-            }
-            else if(command.equals("2")){
-                reportManager.readYearlyReport();
-                System.out.println("Годовой отчет считан!");
-            }
-            else if (command.equals("3")){
-                reportManager.dataChecked();
-            }
-            else if (command.equals("4")){
-                reportManager.printMonth();
-            }
-            else if (command.equals("5")){
-                reportManager.printYear();
-            }
-            else if(command.equals("0")){
-                System.out.println("Завершение программы. До свидания!");
-                return;
+            String command = scanner.next().trim();
+            switch (command) {
+                case "1":
+                    reportManager.readMonthlyReports();
+                    break;
+                case "2":
+                    reportManager.readYearlyReport();
+                    System.out.println("Годовой отчет считан!");
+                    break;
+                case "3":
+                    reportManager.dataChecked();
+                    break;
+                case "4":
+                    reportManager.printMonth();
+                    break;
+                case "5":
+                    reportManager.printYear();
+                    break;
+                case "0":
+                    System.out.println("Завершение программы. До свидания!");
+                    return;
             }
         }
     }

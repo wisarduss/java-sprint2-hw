@@ -2,12 +2,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class ReportManager {
-    ArrayList<YearlyReport> yearlyReports = new ArrayList<>();
-    HashMap<Integer, MonthlyReport> monthlyReports = new HashMap<>();
-    ArrayList<Integer> totalExpensesMonth = new ArrayList<>();
-    ArrayList<Integer> totalIncomesMonth = new ArrayList<>();
-    ArrayList<Integer> totalExpensesYear = new ArrayList<>();
-    ArrayList<Integer> totalIncomesYear = new ArrayList<>();
+    final ArrayList<YearlyReport> yearlyReports = new ArrayList<>();
+    final HashMap<Integer, MonthlyReport> monthlyReports = new HashMap<>();
+    final ArrayList<Integer> totalExpensesMonth = new ArrayList<>();
+    final ArrayList<Integer> totalIncomesMonth = new ArrayList<>();
+    final ArrayList<Integer> totalExpensesYear = new ArrayList<>();
+    final ArrayList<Integer> totalIncomesYear = new ArrayList<>();
 
     FileReader fileReader = new FileReader();
 
